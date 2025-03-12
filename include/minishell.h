@@ -6,7 +6,7 @@
 /*   By: cmassol <cmassol@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 15:18:00 by cmassol           #+#    #+#             */
-/*   Updated: 2025/03/03 15:21:31 by cmassol          ###   ########.fr       */
+/*   Updated: 2025/03/12 23:24:59 by cmassol          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,19 +49,19 @@
 # include <fcntl.h>
 # include <dirent.h>
 // color codes
-# define R "\x1b[31m"
-# define BR "\x1b[91m"
-# define G "\x1b[32m"
-# define BG "\x1b[92m"
-# define Y "\x1b[33m"
-# define BY "\x1b[93m"
-# define B "\x1b[34m"
-# define BB "\x1b[94m"
-# define P "\x1b[35m"
-# define BP "\x1b[95m"
-# define C "\x1b[36m"
-# define BC "\x1b[96m"
-# define RT "\x1b[0m"
+# define R "\x1b[31m"   // red
+# define BR "\x1b[91m"  // bright red
+# define G "\x1b[32m"   // green
+# define BG "\x1b[92m"  // bright green
+# define Y "\x1b[33m"   // yellow
+# define BY "\x1b[93m"  // bright yellow
+# define B "\x1b[34m"   // blue
+# define BB "\x1b[94m"  // bright blue
+# define P "\x1b[35m"   // purple
+# define BP "\x1b[95m"  // bright purple
+# define C "\x1b[36m"   // cyan
+# define BC "\x1b[96m"  // bright cyan
+# define RT "\x1b[0m"   // reset
 
 # define PROMPT "🐰Lapinas && 🐯WiLDCaT ShELL $> "
 

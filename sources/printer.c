@@ -6,7 +6,7 @@
 /*   By: cmassol <cmassol@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 16:40:00 by cmassol           #+#    #+#             */
-/*   Updated: 2025/03/03 19:48:39 by cmassol          ###   ########.fr       */
+/*   Updated: 2025/03/12 23:27:27 by cmassol          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,7 @@ void	print_this(void)
 // Text color : RED
 void   print_the_edge(void)
 {
+    printf(BP"\n");
     ft_putstr("▄▀   ▄  █ ████▄    ▄▄▄▄▄      ▄▄▄▄▀     ▄█    ▄          ▄▄▄▄▀ ▄  █ ▄███▄          ▄▄▄▄▄    ▄  █ ▄███▄   █    █     \n", 1);
     ft_putstr("▄▀    █   █ █   █   █     ▀▄ ▀▀▀ █        ██     █      ▀▀▀ █   █   █ █▀   ▀        █     ▀▄ █   █ █▀   ▀  █    █     \n", 1);
     ft_putstr("█ ▀▄  ██▀▀█ █   █ ▄  ▀▀▀▀▄       █        ██ ██   █         █   ██▀▀█ ██▄▄        ▄  ▀▀▀▀▄   ██▀▀█ ██▄▄    █    █     \n", 1);
@@ -96,5 +97,5 @@ void   print_the_edge(void)
     ft_putstr(" ███     █                     ▀           ▐ █  █ █       ▀        █  ▀███▀                     █  ▀███▀       ▀    ▀     \n", 1);
     ft_putstr("        ▀                                    █   ██               ▀                            ▀                      \n", 1);
     ft_putstr("                                                                                                                      \n", 1);
-    ft_putstr("\n", 1);
+    printf(RT"\n");
 }

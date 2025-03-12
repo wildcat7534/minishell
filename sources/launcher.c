@@ -6,7 +6,7 @@
 /*   By: cmassol <cmassol@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 15:17:42 by cmassol           #+#    #+#             */
-/*   Updated: 2025/03/03 19:48:44 by cmassol          ###   ########.fr       */
+/*   Updated: 2025/03/12 23:15:54 by cmassol          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int	main(void)
 {
+    print_the_edge();
     minishell();
     return (0);
 }

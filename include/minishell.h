@@ -6,7 +6,7 @@
 /*   By: cmassol <cmassol@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 15:18:00 by cmassol           #+#    #+#             */
-/*   Updated: 2025/03/12 23:24:59 by cmassol          ###   ########.fr       */
+/*   Updated: 2025/03/13 11:44:48 by cmassol          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,8 @@
 # define ERR_CLOSEDIR "Error: closedir failed\n"
 # define ERR_IOCTL "Error: ioctl failed\n"
 
+# define EXIT_SUCCESS 0
+
 # define pf(...) printf(__va_args__)
 # define dpf(fd, ...) dprintf(fd, __va_args__)
 
@@ -116,6 +118,12 @@ typedef struct s_cmd_list
     int     cmd_nb;
 }               t_cmd_list;
 
+typedef struct s_l_ptr
+{
+    char    *ptr;
+    t_l_ptr   *prev;
+    t_l_ptr   *next;
+}               t_l_ptr;
 
 void	minishell(void);
 void    Getcwd(char *buf, size_t size);

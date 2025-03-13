@@ -6,7 +6,7 @@
 /*   By: cmassol <cmassol@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 15:48:54 by cmassol           #+#    #+#             */
-/*   Updated: 2025/03/12 23:11:06 by cmassol          ###   ########.fr       */
+/*   Updated: 2025/03/13 11:45:34 by cmassol          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,8 @@ void	minishell(void)
     
    size_t      bufsize = 0;
     
-    cwd[0] = '*';
-    //Getcwd(cwd, sizeof(cwd));
-   // print_the_edge();
+    cwd[0] = '*';//pwd=getcwd(cwd, sizeof(cwd));
+    
     // get env
     // get path
     printf("%s"G PROMPT RT, cwd);
@@ -43,10 +42,10 @@ void	minishell(void)
         //trim
         line = ft_strtrim(line, " \t\n");
         //parse
-        char *token;
-        char *argv[BUFFER_SIZE];
-        int argc = 0;
-        char *delim = " \t\n";
+        char    *token;
+        char    *argv[BUFFER_SIZE];
+        int     argc = 0;
+        char    *delim = " \t\n";
        
         token = strtok(line, delim);
         while (token != NULL)
@@ -62,6 +61,7 @@ void	minishell(void)
         printf(BP "%s" RT, "Bien recu 🫡 : ");
         printf("%s\n", line);
         printf("argv[0] = %s\n", argv[0]);
+        
         
         if (fork() == 0)
         {
@@ -79,6 +79,7 @@ void	minishell(void)
             printf("child exited abnormally\n");
         //printf("%s", line);
         printf("\n");
+
         free(line);
         line = NULL;
         bufsize = 0;
